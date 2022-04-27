@@ -2,3 +2,10 @@ INSERT INTO animals(name, date_of_birth, escape_attemps,neutered, weight_kg) val
 INSERT INTO animals(name, date_of_birth,escape_attemps ,neutered, weight_kg) values ('Gabumon', '2018-11-15',2, TRUE, 8);
 INSERT INTO animals(name, date_of_birth, weight_kg, neutered, escape_attemps) values('Pikachu', '2021-01-07',15.04, FALSE, 1);
 INSERT INTO animals(name, date_of_birth, weight_kg, neutered, escape_attemps) values ('Devimon', '2021-05-12',11, TRUE, 5);
+INSERT INTO animals(name, date_of_birth, escape_attemps,neutered, weight_kg) values  ('Charmander', '2020-02-08', 0, FALSE, -11);
+INSERT INTO animals(name, date_of_birth, escape_attemps,neutered, weight_kg) values  ('Plantmon', '2021-11-15', 2, TRUE, 5.7);
+INSERT INTO animals(name, date_of_birth, escape_attemps,neutered, weight_kg) values  ('Squirtle', '1993-04-02', 3, FALSE, -12.13);
+INSERT INTO animals(name, date_of_birth, escape_attemps,neutered, weight_kg) values  ('Angemon', '2005-06-12', 1, FALSE, -45);
+INSERT INTO animals(name, date_of_birth, escape_attemps,neutered, weight_kg) values  ('Boarmon', '2005-06-07', 7, TRUE, 20.4);
+INSERT INTO animals(name, date_of_birth, escape_attemps,neutered, weight_kg) values  ('Blossom', '1998-10-13', 3, TRUE, 17);
+INSERT INTO animals(name, date_of_birth, escape_attemps,neutered, weight_kg) values  ('Ditto', '2022-05-14', 4, TRUE, 22);
