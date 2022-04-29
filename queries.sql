@@ -42,7 +42,7 @@ SELECT COUNT(escape_attemps) FROM animals where escape_attemps = 0;
 SELECT AVG(weight_kg) FROM animals; 
 
 /*Who escapes the most, neutered or not neutered animals?*/
-SELECT neutered, MAX(escape_attempts) FROM animals
+SELECT neutered, MAX(escape_attemps) FROM animals
   GROUP BY neutered;
 
  /*What is the minimum and maximum weight of each type of species?*/
@@ -70,7 +70,7 @@ SELECT COUNT(*), species.name FROM animals JOIN species ON animals.species_id = 
 SELECT animals.* FROM animals LEFT JOIN owners ON animals.owner_id = owners.id LEFT JOIN species ON animals.species_id = species.id WHERE owners.full_name = 'Jennifer Orwell' AND species.name = 'Digimon';
 
 /* List all animals owned by Dean Winchester that haven't tried to escape */
-SELECT animals.* FROM animals LEFT JOIN owners ON animals.owner_id = owners.id WHERE owners.full_name = 'Dean Winchester' AND animals.escape_attempts = 0;
+SELECT animals.* FROM animals LEFT JOIN owners ON animals.owner_id = owners.id WHERE owners.full_name = 'Dean Winchester' AND animals.escape_attemps = 0;
 
 /* Who owns the most animals? */
 SELECT owners.full_name, COUNT(animals.name) AS total FROM owners LEFT JOIN animals ON animals.owner_id=owners.id GROUP BY owners.full_name ORDER BY total DESC LIMIT 1; 
