@@ -4,3 +4,41 @@ CREATE TABLE animals (
 
 ALTER TABLE animals
   ADD COLUMN species VARCHAR;
+
+CREATE TABLE owners (
+	id INT PRIMARY KEY,
+	full_name VARCHAR NOT NULL,
+	age INT
+);
+
+CREATE TABLE species (
+	id INT PRIMARY KEY,
+	name VARCHAR NOT NULL
+);
+
+ALTER TABLE animals
+ ADD CONSTRAINT id
+  PRIMARY KEY(id);
+
+ALTER TABLE animals
+	DROP COLUMN species;
+
+/*Adding species_id column in animals table*/
+ALTER TABLE animals
+ADD COLUMN species_id INT;
+
+/*Make species_id reference id in species table*/
+ALTER TABLE animals 
+ADD CONSTRAINT fk_species 
+FOREIGN KEY (species_id) 
+REFERENCES species (id);
+
+/*Creating owner id column*/
+ALTER TABLE animals
+ADD COLUMN owner_id INT;
+
+/*Make owners_id reference id in owners table*/
+ALTER TABLE animals 
+ADD CONSTRAINT fk_owner 
+FOREIGN KEY (owner_id) 
+REFERENCES owners (id);
