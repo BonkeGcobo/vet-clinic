@@ -36,8 +36,8 @@ UPDATE animals SET owner_id = (SELECT id FROM owners WHERE full_name = 'Dean Win
 
 INSERT INTO vets(id, name, age, date_of_graduation) VALUES (1, 'William Tatcher', 45, '2000-04-23');
 INSERT INTO vets(id, name, age, date_of_graduation) VALUES (2, 'Maisy Smith', 26, '2019-01-17');
-INSERT INTO vets(id, name, age, date_of_graduation) VALUES (3, 'Stephanie', 64, '1981-05-04');
-
+INSERT INTO vets(id, name, age, date_of_graduation) VALUES (3, 'Stephanie Mendez', 64, '1981-05-04');
+INSERT INTO vets(id, name, age, date_of_graduation) VALUES (4, 'Jack Harkness', 38, '2008-06-08');
 /*inserting into the specialization table*/
 INSERT INTO specializations (species_id, vets_id) VALUES (1,1),(2,3),(1,3),(2,4);
 
